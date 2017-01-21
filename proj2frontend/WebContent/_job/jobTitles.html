@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<table>
+<tr>
+<th>Job Title</th>
+</tr>
+<tr ng-repeat="job in jobs">
+<td>
+<!-- <a href="getJobDetail/{{job.jobId}}">{{job.jobTitle}}</a> -->
+<a href="" ng-click="getJobDetail(job.jobId)" >{{job.jobTitle}}</a>
+</td>
+</tr>
+</table>
+<B>Job Details</B> <BR>
+TITLE: 
+{{jobDetail.jobTitle}}<br>
+JOB DESCRIPTION: 
+{{jobDetail.jobDescription}}<br>
+SKILLS REQUIRED:
+{{jobDetail.skillsRequired}}<br>
+SALARY
+{{jobDetail.salary}}
+<br>
+LOCATION
+{{jobDetail.location}}<br>
+<a href="#/home"> Home page</a>
+
+</body>
+</html>
